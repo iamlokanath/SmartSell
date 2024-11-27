@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import HomePage from "./pages/HomePage";
+import WhySell from "./components/WhySell";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<HomePage/>}/>
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/landing" element = {<LandingPage/>}/>
+          <Route path="/whysell" element = {<WhySell/>}/>
         </Routes>
       </BrowserRouter>
     </>
