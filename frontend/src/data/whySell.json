@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Environmental Impact",
+    "description": "Selling e-waste helps to reduce the harmful impact on the environment caused by the disposal of electronic devices in landfills. Proper recycling of e-waste prevents toxic substances from contaminating soil and water, contributing to a cleaner and healthier environment.",
+    "logo": "/Image/envImapct.jpeg"
+  },
+  {
+    "title": "Resource Conservation",
+    "description": "Recycling e-waste allows for the recovery of valuable materials such as gold, silver, and copper. By selling your e-waste, you contribute to the conservation of these natural resources, reducing the need for mining and conserving the planet's finite resources.",
+    "logo": "/Image/recycledElectronics.jpeg"
+  },
+  {
+    "title": "Economic Benefits",
+    "description": "Selling e-waste can provide economic benefits by generating income from unwanted electronic devices. This not only puts money back in your pocket but also supports businesses and jobs in the recycling and refurbishment industries.",
+    "logo": "/Image/saveMoney.jpeg"
+  },
+  {
+    "title": "Data Security",
+    "description": "Proper disposal of e-waste ensures that personal and sensitive data stored on old electronic devices is securely destroyed, protecting you from data breaches and identity theft.",
+    "logo": "/Image/dataSecurity.jpeg"
+  },
+  {
+    "title": "Reducing Carbon Footprint",
+    "description": "By selling and recycling e-waste, you help reduce the carbon footprint associated with manufacturing new electronics. Recycling e-waste uses less energy than producing new devices, helping to reduce greenhouse gas emissions.",
+    "logo": "/Image/greenFactory.jpg"
+  },
+  {
+    "title": "Supporting Circular Economy",
+    "description": "Selling e-waste supports the concept of a circular economy where products and materials are reused, refurbished, or recycled. This sustainable approach helps to minimize waste and promotes the efficient use of resources.",
+    "logo": "/Image/circularEconomy.jpeg"
+  }
+]

@@ -1,0 +1,24 @@
+[
+    {
+      "type": "dropdown",
+      "placeholder": "model_name",
+      "options": ["iPhone 15", "Samsung S21", "Samsung", "Nokia", "Mi", "Poco"]
+    },
+    {
+      "type": "dropdown",
+      "placeholder": "age",
+      "options": [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    {
+      "type": "dropdown",
+      "placeholder": "battery_damage",
+      "options": [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    {
+      "type": "dropdown",
+      "placeholder": "screen_damage",
+      "options": [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    }
+    
+  ]
+  
