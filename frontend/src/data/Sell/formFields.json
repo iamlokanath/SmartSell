@@ -1,6 +1,6 @@
 [
     {
-      "id": "model-name",
+      "id": "model_name",
       "label": "Model Name",
       "name": "model_name",
       "placeholder": "Enter Your Model Name"
@@ -12,13 +12,13 @@
       "placeholder": "How Old is your Device?"
     },
     {
-      "id": "battery-damage",
+      "id": "battery_damage",
       "label": "Battery Level",
       "name": "battery_damage",
       "placeholder": "Enter Your Battery Damage Level in a range of 0 to 5"
     },
     {
-      "id": "screen-damage",
+      "id": "screen_damage",
       "label": "Screen Damage Level",
       "name": "screen_damage",
       "placeholder": "Enter Your Screen Damage Level in a range of 0 to 5"
@@ -36,19 +36,19 @@
       "placeholder": "Enter the size of the ROM of your device."
     },
     {
-      "id": "receive-call",
+      "id": "make_receive_call",
       "label": "Call Condition",
       "name": "make_receive_call",
       "placeholder": "Are you able to receive calls from your device?"
     },
     {
-      "id": "screen-working",
+      "id": "touch_screen_working",
       "label": "Screen Condition",
       "name": "touch_screen_working",
       "placeholder": "Is your Screen working?"
     },
     {
-      "id": "original-screen",
+      "id": "isOriginalScreen",
       "label": "Original Screen or Not",
       "name": "is_original_screen",
       "placeholder": "Is this your original screen?"

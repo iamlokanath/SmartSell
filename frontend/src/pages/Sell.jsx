@@ -12,6 +12,7 @@ import Navbar from "../components/Navbar";
 import cardData from "../data/Sell/screenDamageOptions.json";
 import physicalDamageData from "../data/Sell/physicalDamageData.json";
 import views from "../data/Sell/views.json";
+import axios from 'axios';  // Import axios
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -56,7 +57,7 @@ function Sell() {
   const [formData, setFormData] = useState({});
   const steps = getSteps();
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (activeStep === steps.length - 1) {
       // Map selected IDs to their corresponding labels
       const selectedScreenLabels = selectedScreenPreferences.map(
@@ -65,16 +66,29 @@ function Sell() {
       const selectedPhysicalLabels = selectedPhysicalPreferences.map(
         (id) => physicalDamageData.find((item) => item.id === id)?.label
       );
-
+  
       // Log the form data and selected preferences (with labels)
       console.log("Form Data:", formData);
       console.log("Selected Screen Preferences (Labels):", selectedScreenLabels);
       console.log("Selected Physical Preferences (Labels):", selectedPhysicalLabels);
-
-      localStorage.setItem("formData", JSON.stringify(formData));
+  
+      // Remove the empty 'back' field if it exists
+      const cleanedFormData = { ...formData };
+      delete cleanedFormData.back;
+  
+      // Make API call to Flask backend for price sell
+      try {
+        const response = await axios.post('http://localhost:5000/prediction', cleanedFormData);
+        const { predicted_price } = response.data;
+        alert(`Predicted Price: ₹${predicted_price}`);
+      } catch (error) {
+        console.error('Error in sell:', error);
+        alert('Error predicting price. Please try again.');
+      }
     }
     setActiveStep((prevStep) => prevStep + 1);
   };
+  
 
   const handleBack = () => {
     setActiveStep((prevStep) => prevStep - 1);
@@ -116,10 +130,9 @@ function Sell() {
               ? classes.selectedCard
               : ""
           }`}
-          
           onClick={() => handleCardClick(card.id, category)}
         >
-          <img src={card.image} alt={card.label} width="100px" height="100px" className="items-center justify-center"/>
+          <img src={card.image} alt={card.label} width="100px" height="100px" />
           <Typography variant="body1" align="center">
             {card.label}
           </Typography>

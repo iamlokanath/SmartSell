@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import WhySell from "./components/WhySell";
 import Features from "./components/Features";
 import Sell from "./pages/Sell";
+import PricePrediction from "./pages/PricePrediction";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/sell" element={<Sell/>}/>
+          <Route path="/prediction" element={<PricePrediction/>}/>
           
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/landing" element = {<LandingPage/>}/>
