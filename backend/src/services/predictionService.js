@@ -1,23 +1,16 @@
-const { PythonShell } = require('python-shell');
+const axios = require('axios');
 
-const predict = (data) => {
-  return new Promise((resolve, reject) => {
-    const options = {
-      mode: 'text',
-      pythonPath: 'python',  // Or 'python3' depending on your environment
-      scriptPath: './python-backend',
-      args: [data.age, data.screen_damage, data.battery_damage, data.ram, data.rom, data.make_receive_call, data.touch_screen_working, data.is_original_screen, data.model_name],
-    };
+const makePrediction = async (inputData) => {
+  try {
+    // Call the Python backend
+    const response = await axios.post('http://localhost:5000/predict', inputData);
 
-    PythonShell.run('predict_model.py', options, (err, result) => {
-      if (err) {
-        return reject(err);
-      }
-      resolve(result[0]);
-    });
-  });
+    // Return predictions from the Python backend
+    return response.data.predictions;
+  } catch (error) {
+    console.error('Error while calling Python backend:', error.message);
+    throw new Error('Failed to fetch prediction from Python backend');
+  }
 };
 
-module.exports = {
-  predict,
-};
+module.exports = { makePrediction };

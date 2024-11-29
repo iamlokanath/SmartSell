@@ -1,15 +1,16 @@
-const predictionService = require('../services/predictionService');
+const { makePrediction } = require('../services/predictionService');
 
-const predictPrice = async (req, res) => {
+const predictHandler = async (req, res) => {
   try {
-    const result = await predictionService.predict(req.body);
-    res.json({ predictedPrice: result });
+    const inputData = req.body; // Input from frontend
+    const predictions = await makePrediction(inputData);
+
+    // Send predictions back to the frontend
+    res.status(200).json({ predictions });
   } catch (error) {
-    console.error('Error during prediction:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    console.error('Error in predictionHandler:', error.message);
+    res.status(500).json({ error: 'Failed to get predictions' });
   }
 };
 
-module.exports = {
-  predictPrice,
-};
+module.exports = { predictHandler };

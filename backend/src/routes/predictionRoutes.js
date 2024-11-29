@@ -1,7 +1,8 @@
 const express = require('express');
+const { predictHandler } = require('../controllers/predictionController');
 const router = express.Router();
-const predictionController = require('../controllers/predictionController');
 
-router.post('/predict', predictionController.predictPrice);
+// Route to handle prediction
+router.post('/predict', predictHandler);
 
 module.exports = router;
