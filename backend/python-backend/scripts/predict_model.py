@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 # Load the saved model
-model_file_path = 'python-backend/model/updated_best_model.pkl'
+model_file_path = 'E:/Code with Lokanath/02.Project/@2024/03FullStack/Smart Sell/backend/python-backend/model/updated_best_model.pkl'
 with open(model_file_path, 'rb') as model_file:
     model = pickle.load(model_file)
 
