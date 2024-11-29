@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "label": "Option 1",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "label": "Option 2",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "label": "Option 3",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "label": "Option 4",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 5,
+      "label": "Option 5",
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+  
