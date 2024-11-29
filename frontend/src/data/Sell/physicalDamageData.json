@@ -1,38 +1,63 @@
 [
     {
       "id": 1,
-      "label": "Option 1",
-      "image": "https://via.placeholder.com/150"
+      "label": "Front Camera not working",
+      "image": "/Image/frontCamera.webp"
     },
     {
       "id": 2,
-      "label": "Option 2",
-      "image": "https://via.placeholder.com/150"
+      "label": "Back Camera not working",
+      "image": "/Image/backCamera.webp"
     },
     {
       "id": 3,
-      "label": "Option 3",
-      "image": "https://via.placeholder.com/150"
+      "label": "Finger Touch not working",
+      "image": "/Image/finger.webp"
     },
     {
       "id": 4,
-      "label": "Option 4",
-      "image": "https://via.placeholder.com/150"
+      "label": "WiFi not working",
+      "image": "/Image/wifi.webp"
     },
     {
       "id": 5,
-      "label": "Option 5",
-      "image": "https://via.placeholder.com/150"
+      "label": "Power Button not working",
+      "image": "/Image/powerbtn.webp"
     },
     {
       "id": 6,
-      "label": "Option 6",
-      "image": "https://via.placeholder.com/150"
+      "label": "Charging Port not working",
+      "image": "/Image/chargingPort.webp"
     },
     {
       "id": 7,
-      "label": "Option 7",
-      "image": "https://via.placeholder.com/150"
+      "label": "Face Sensor not working",
+      "image": "/Image/faceSensor.webp"
+    },
+    {
+      "id": 8,
+      "label": "Audio Receiver not working",
+      "image": "/Image/audioReceive.webp"
+    },
+    {
+      "id": 9,
+      "label": "Camera Glass Broken",
+      "image": "/Image/cameraGlass.webp"
+    },
+    {
+      "id": 10,
+      "label": "Bluetooth not working",
+      "image": "/Image/bluetooth.webp"
+    },
+    {
+      "id": 11,
+      "label": "Vibrator is not working",
+      "image": "/Image/vibrator.webp"
+    },
+    {
+      "id": 12,
+      "label": "Microphone not working",
+      "image": "/Image/microphone.webp"
     }
   ]
   

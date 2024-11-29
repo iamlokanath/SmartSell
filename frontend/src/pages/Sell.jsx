@@ -20,6 +20,12 @@ const useStyles = makeStyles((theme) => ({
   card: {
     border: "1px solid #ccc",
     borderRadius: "8px",
+    width: "200px",
+    height: "200px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
     padding: theme.spacing(2),
     margin: theme.spacing(1),
     cursor: "pointer",
@@ -110,9 +116,10 @@ function Sell() {
               ? classes.selectedCard
               : ""
           }`}
+          
           onClick={() => handleCardClick(card.id, category)}
         >
-          <img src={card.image} alt={card.label} width="100%" />
+          <img src={card.image} alt={card.label} width="100px" height="100px" className="items-center justify-center"/>
           <Typography variant="body1" align="center">
             {card.label}
           </Typography>
